@@ -716,8 +716,121 @@ footer p {
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+/* =============================
+    Telefon STÍLUSOK
+============================= */
+
+@media (max-width: 768px) {
+  .logo img {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsla(100, 0%, 0%, .1);
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    z-index: 1001;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: block;
+  }
+
+  .hero-text {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .fodraszat-container,
+  .kozmetika-container,
+  .manikur-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image,
+  .description {
+    flex: none;
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th h3 {
+    font-size: 24px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form h2 {
+    font-size: 2rem;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 80%;
+  }
+
+  .prev,
+  .next {
+    font-size: 24px;
+  }
+
   footer {
-    min-height: 7vh;
+    font-size: 0.75rem;
   }
 }
