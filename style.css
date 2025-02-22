@@ -830,7 +830,7 @@ footer p {
   /* Form konténer középre igazítása */
   .form-container {
     width: 90%;
-    max-width: 600px; /* Korábbi maximális szélesség */
+    max-width: 600px; 
     margin: 0 auto;
     padding: 20px;
   }
