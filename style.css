@@ -39,7 +39,7 @@ h2 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 55px;
 }
 
 h3 {
@@ -232,7 +232,6 @@ nav {
 }
 
 .description h2 {
-  font-size: 4em;
   color: #333;
 }
 
@@ -342,7 +341,6 @@ th h3 {
 }
 
 .description h2 {
-  font-size: 4em;
   color: #333;
 }
 
@@ -392,7 +390,6 @@ th h3 {
 }
 
 .description h2 {
-  font-size: 4em;
   color: #333;
 }
 
@@ -486,10 +483,35 @@ form textarea {
 /* =============================
     Galeria STÍLUSOK
 ============================= */
+.galeria_cim {
+  width: 100%; /* Teljes szélesség */
+  max-width: 1200px; /* Galéria maximális szélessége 1200px */
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 20px; /* Térköz a galéria körül */
+}
+
+#gallery {
+  display: grid; /* Rácsos elrendezés */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dinamikus oszlopok, minimum 250px szélesek */
+  gap: 20px; /* Rácsok közötti távolság */
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%; /* Kép kitölti a szülő elem szélességét */
+  height: auto; /* Arányok megtartása */
+}
 
 
 #gallery {
-  margin: 70px;
+  margin-bottom: 70px;
   max-width: 1200px;
   position: relative;
   left: 50%;
@@ -497,7 +519,6 @@ form textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
 }
 
 #gallery figure {
