@@ -849,15 +849,15 @@ footer p {
   }
 
   .galeria_cim {
-    width: 100%; /* Teljes szélesség */
-    max-width: 1200px; /* Galéria maximális szélessége 1200px */
-    margin: 0 auto; /* Középre igazítja a szakaszt */
-    padding: 20px; /* Térköz a galéria körül */
-    text-align: center; /* A szöveget középre igazítja */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
   }
   
   .galeria_cim h2 {
-    margin: 0; /* Eltávolítja a cím alapértelmezett margóját */
+    margin: 0; 
   }
   
 
