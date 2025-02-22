@@ -823,8 +823,20 @@ footer p {
     font-size: 24px;
   }
 
+  .idopont-foglalas {
+    padding: 70px 20px; /* Igazítjuk a paddingot */
+  }
+
+  /* Form konténer középre igazítása */
+  .form-container {
+    width: 90%;
+    max-width: 600px; /* Korábbi maximális szélesség */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
   form {
-    padding: 15px;
+    padding: 0px;
   }
 
   form h2 {
@@ -835,6 +847,19 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
+  .galeria_cim {
+    width: 100%; /* Teljes szélesség */
+    max-width: 1200px; /* Galéria maximális szélessége 1200px */
+    margin: 0 auto; /* Középre igazítja a szakaszt */
+    padding: 20px; /* Térköz a galéria körül */
+    text-align: center; /* A szöveget középre igazítja */
+  }
+  
+  .galeria_cim h2 {
+    margin: 0; /* Eltávolítja a cím alapértelmezett margóját */
+  }
+  
 
   .modal-content {
     max-width: 95%;
